@@ -1,0 +1,51 @@
+header{
+    /* background-color: black; */
+    width: 100%;
+    color: white;
+    position: absolute;
+}
+
+nav{
+   width: 80%;
+   display: flex;
+   font-weight: 200;
+   background-color: transparent;
+   align-items: center;
+   justify-content: space-between;
+   margin: auto;
+   user-select: none; /*it will allow the user not to highlights the link or text area */
+   padding: 1.7rem 0;
+    
+}
+
+.user-icon{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    color:rgb(239, 79, 95);
+    border: 1px solid ;
+    display: none;
+    cursor: pointer;
+}
+
+
+@media (max-width : 800px){
+    nav{
+        justify-content: flex-end;
+        padding: 0 1rem;
+        width: 100%;
+        height: 5.6rem;
+    }
+    .user-icon{
+        display: flex;
+        align-self: self-end;
+    }
+    .nav-left{
+        display: none;
+    }
+    .nav-right{
+        display: none;
+    }
+}
